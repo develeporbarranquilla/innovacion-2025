@@ -1,0 +1,158 @@
+/* sorteo-styles.css */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    background-color: #E6F7FA; 
+  }
+  
+  .logo-top-left {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  .logo-top-left img {
+    max-width: 200px;
+  }
+  
+  h1 {
+    margin-top: 100px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  textarea {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto 10px;
+    background-color: #E6F7FA; 
+  }
+  
+  #crearEquipos, #sortear {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #crearEquipos:hover, #sortear:hover {
+    background-color: #3e8e41;
+  }
+  
+  #sortear {
+    background-color: #008CBA;
+  }
+  
+  #sortear:hover {
+    background-color: #0077B3;
+  }
+  
+  #sortear:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  #equipos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .equipo {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .mostrar {
+    opacity: 1;
+  }
+  
+  .nombre-jugador-animado {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .nombre-jugador-animado.visible {
+    opacity: 1;
+  }
+  
+  .botones-final {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+  }
+  
+  #descargarResultados, #descargarPDF, #iniciarTorneo {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  #descargarResultados:hover, #descargarPDF:hover, #iniciarTorneo:hover {
+    background-color: #3e8e41;
+  }
+  
+  #descargarPDF {
+    background-color: #FF9800;
+  }
+  
+  #descargarPDF:hover {
+    background-color: #F57C00;
+  }
+  
+  #iniciarTorneo {
+    background-color: #FF5722;
+  }
+  
+  #iniciarTorneo:hover {
+    background-color: #e64a19;
+  }

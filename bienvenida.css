@@ -1,0 +1,72 @@
+/* styles.css */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #E6F7FA; /* Fondo azul claro */
+    position: relative; /* Para posicionar el logo de forma absoluta */
+  }
+  
+  .logo-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo-top-left img {
+    max-width: 200px; /* Ajusta el tamaño del logo en la esquina */
+  }
+  
+  .bienvenida {
+    text-align: center;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .logo-container img {
+    max-width: 300px;
+    margin: 10px;
+    background-color: transparent;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #005B7F;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #00AEEF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #008BCF;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
