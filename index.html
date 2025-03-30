@@ -2,33 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sorteo de Equipos</title>
-  <link rel="stylesheet" type="text/css" href="sorteo-styles.css">
+  <title>Bienvenida - Programa de Innovación Corporativa</title>
+  <link rel="stylesheet" type="text/css" href="bienvenida.css">
 </head>
 <body>
   <div class="logo-top-left">
     <img src="management-quality-logo.png" alt="Management & Quality Logo">
   </div>
-  <h1>Sorteo de Equipos</h1>
-  <div class="input-group">
-    <textarea id="nombresEquipos" placeholder="Nombres de los equipos (uno por línea)"></textarea>
-    <button id="crearEquipos">Crear Equipos</button>
+  <div class="bienvenida">
+    <div class="logo-container">
+      <img src="programa-innovacion-logo.png" alt="Programa de Innovación Corporativa">
+    </div>
+    <h1>¡Bienvenidos al Programa de Innovación Corporativa!</h1>
+    <p>Formemos equipos innovadores para impulsar el éxito.</p>
+    <a href="sorteo.html"><button>Comenzar</button></a>
   </div>
-  <div class="input-group">
-    <textarea id="jugadores" placeholder="Lista de jugadores (uno por línea)"></textarea>
-    <button id="sortear">Sortear</button>
-  </div>
-  <div id="equipos"></div>
-  <div class="botones-final" id="botonesFinal">
-    
-    <button id="descargarResultados" style="display: none;">Descargar CSV</button>
-    <button id="descargarPDF" style="display: none;">Descargar PDF</button>
-    <a id="iniciarTorneoLink" href="inicio-torneo.html" style="display: none;">
-      <button id="iniciarTorneo">Finalizar</button>
-    </a>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
