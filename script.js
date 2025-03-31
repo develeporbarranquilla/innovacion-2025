@@ -298,7 +298,7 @@ sortearBtn.addEventListener('click', () => {
   equipos[equipoActualIndex].lista.innerHTML = '';
 
   let jugadorIndex = 0;
-  const duracionPorJugador = 2000;
+  const duracionPorJugador = 1500;
 
   function asignarJugadorEquipo() {
     if (jugadorIndex < jugadoresPorEquipo && jugadoresDisponibles.length > 0) {
@@ -324,7 +324,7 @@ sortearBtn.addEventListener('click', () => {
         nombreAnimado.classList.remove('visible');
         setTimeout(() => {
           document.body.removeChild(nombreAnimado);
-        }, 2000 );
+        }, 1500 );
 
         jugadorIndex++;
         asignarJugadorEquipo();
