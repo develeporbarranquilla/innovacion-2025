@@ -298,7 +298,7 @@ sortearBtn.addEventListener('click', () => {
   equipos[equipoActualIndex].lista.innerHTML = '';
 
   let jugadorIndex = 0;
-  const duracionPorJugador = 500;
+  const duracionPorJugador = 100;
 
   function asignarJugadorEquipo() {
     if (jugadorIndex < jugadoresPorEquipo && jugadoresDisponibles.length > 0) {
