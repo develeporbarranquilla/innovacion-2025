@@ -324,7 +324,7 @@ sortearBtn.addEventListener('click', () => {
         nombreAnimado.classList.remove('visible');
         setTimeout(() => {
           document.body.removeChild(nombreAnimado);
-        }, 500);
+        }, 1000 );
 
         jugadorIndex++;
         asignarJugadorEquipo();
